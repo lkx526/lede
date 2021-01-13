@@ -65,38 +65,30 @@ jobs:
           touch ./.config
           #
           # 在 cat >> .config <<EOF 到 EOF 之间粘贴你的编译配置, 需注意缩进关系
-          # Raspberry4B:
+          # X86:
           cat >> .config <<EOF
-          CONFIG_TARGET_bcm27xx=y
-          CONFIG_TARGET_bcm27xx_bcm2711=y
-          CONFIG_TARGET_bcm27xx_bcm2711_DEVICE_rpi-4=y
-          CONFIG_LIBCURL_COOKIES=y
-          CONFIG_LIBCURL_FILE=y
-          CONFIG_LIBCURL_FTP=y
-          CONFIG_LIBCURL_HTTP=y
-          CONFIG_LIBCURL_MBEDTLS=y
-          CONFIG_LIBCURL_NO_SMB="!"
-          CONFIG_LIBCURL_PROXY=y
-          CONFIG_PACKAGE_bash=y
-          CONFIG_PACKAGE_ca-bundle=y
-          CONFIG_PACKAGE_coreutils-nohup=y
-          CONFIG_PACKAGE_curl=y
-          CONFIG_PACKAGE_iptables-mod-extra=y
-          CONFIG_PACKAGE_kmod-ipt-extra=y
-          CONFIG_PACKAGE_kmod-tun=y
-          CONFIG_PACKAGE_libcap=y
-          CONFIG_PACKAGE_libcap-bin=y
-          CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
-          CONFIG_PACKAGE_libcurl=y
-          CONFIG_PACKAGE_libdb47=y
-          CONFIG_PACKAGE_libgmp=y
-          CONFIG_PACKAGE_libncurses=y
+          CONFIG_TARGET_x86=y
+          CONFIG_TARGET_x86_64=y
+          CONFIG_TARGET_x86_64_DEVICE_generic=y
+          # CONFIG_PACKAGE_adbyby is not set
+          # CONFIG_PACKAGE_iptables-mod-ipsec is not set
+          # CONFIG_PACKAGE_kmod-crypto-cbc is not set
+          # CONFIG_PACKAGE_kmod-crypto-deflate is not set
+          # CONFIG_PACKAGE_kmod-crypto-des is not set
+          # CONFIG_PACKAGE_kmod-crypto-echainiv is not set
+          # CONFIG_PACKAGE_kmod-crypto-hmac is not set
+          # CONFIG_PACKAGE_kmod-crypto-md5 is not set
+          # CONFIG_PACKAGE_kmod-ipsec is not set
+          # CONFIG_PACKAGE_kmod-ipt-ipsec is not set
+          # CONFIG_PACKAGE_kmod-iptunnel6 is not set
+          # CONFIG_PACKAGE_kmod-tun is not set
+          # CONFIG_PACKAGE_libgmp is not set
+          # CONFIG_PACKAGE_libminiupnpc is not set
+          # CONFIG_PACKAGE_libnatpmp is not set
           CONFIG_PACKAGE_libnss=y
-          CONFIG_PACKAGE_libreadline=y
-          CONFIG_PACKAGE_libruby=y
           CONFIG_PACKAGE_libsqlite3=y
-          CONFIG_PACKAGE_libxml2=y
-          CONFIG_PACKAGE_libyaml=y
+          # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
+          # CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_fuse-utils is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
@@ -104,24 +96,15 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
           # CONFIG_PACKAGE_luci-app-vlmcsd is not set
           # CONFIG_PACKAGE_luci-app-vsftpd is not set
-          # CONFIG_PACKAGE_luci-app-webadmin is not set
+          # CONFIG_PACKAGE_luci-app-xlnetacc is not set
+          # CONFIG_PACKAGE_luci-app-zerotier is not set
           CONFIG_PACKAGE_naiveproxy=y
           CONFIG_PACKAGE_nspr=y
-          CONFIG_PACKAGE_ruby=y
-          CONFIG_PACKAGE_ruby-bigdecimal=y
-          CONFIG_PACKAGE_ruby-date=y
-          CONFIG_PACKAGE_ruby-dbm=y
-          CONFIG_PACKAGE_ruby-digest=y
-          CONFIG_PACKAGE_ruby-enc=y
-          CONFIG_PACKAGE_ruby-pstore=y
-          CONFIG_PACKAGE_ruby-psych=y
-          CONFIG_PACKAGE_ruby-stringio=y
-          CONFIG_PACKAGE_ruby-strscan=y
-          CONFIG_PACKAGE_ruby-yaml=y
-          CONFIG_PACKAGE_terminfo=y
+          # CONFIG_PACKAGE_strongswan is not set
           CONFIG_PACKAGE_v2ray=y
           # CONFIG_PACKAGE_vlmcsd is not set
           # CONFIG_PACKAGE_vsftpd-alt is not set
+          # CONFIG_PACKAGE_zerotier is not set
           CONFIG_SQLITE3_DYNAMIC_EXTENSIONS=y
           CONFIG_SQLITE3_FTS3=y
           CONFIG_SQLITE3_FTS4=y
