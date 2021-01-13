@@ -97,7 +97,6 @@ jobs:
           CONFIG_PACKAGE_libsqlite3=y
           CONFIG_PACKAGE_libxml2=y
           CONFIG_PACKAGE_libyaml=y
-          CONFIG_PACKAGE_luci-app-openclash=y
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_fuse-utils is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
