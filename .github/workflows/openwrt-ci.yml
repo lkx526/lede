@@ -1,3 +1,11 @@
+#
+# This is free software, lisence use MIT.
+# 
+# Copyright (C) 2019 P3TERX <https://p3terx.com>
+# Copyright (C) 2020 KFERMercer <KFER.Mercer@gmail.com>
+# 
+# <https://github.com/KFERMercer/OpenWrt-CI>
+#
 
 name: OpenWrt-CI
 
@@ -57,11 +65,74 @@ jobs:
           touch ./.config
           #
           # 在 cat >> .config <<EOF 到 EOF 之间粘贴你的编译配置, 需注意缩进关系
-          # 例如:
+          # Raspberry4B:
           cat >> .config <<EOF
-          CONFIG_TARGET_IMAGES_GZIP=y
-          CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
-          CONFIG_KERNEL_BUILD_DOMAIN="Azure"
+          CONFIG_TARGET_bcm27xx=y
+          CONFIG_TARGET_bcm27xx_bcm2711=y
+          CONFIG_TARGET_bcm27xx_bcm2711_DEVICE_rpi-4=y
+          CONFIG_LIBCURL_COOKIES=y
+          CONFIG_LIBCURL_FILE=y
+          CONFIG_LIBCURL_FTP=y
+          CONFIG_LIBCURL_HTTP=y
+          CONFIG_LIBCURL_MBEDTLS=y
+          CONFIG_LIBCURL_NO_SMB="!"
+          CONFIG_LIBCURL_PROXY=y
+          CONFIG_PACKAGE_bash=y
+          CONFIG_PACKAGE_ca-bundle=y
+          CONFIG_PACKAGE_coreutils-nohup=y
+          CONFIG_PACKAGE_curl=y
+          CONFIG_PACKAGE_iptables-mod-extra=y
+          CONFIG_PACKAGE_kmod-ipt-extra=y
+          CONFIG_PACKAGE_kmod-tun=y
+          CONFIG_PACKAGE_libcap=y
+          CONFIG_PACKAGE_libcap-bin=y
+          CONFIG_PACKAGE_libcap-bin-capsh-shell="/bin/sh"
+          CONFIG_PACKAGE_libcurl=y
+          CONFIG_PACKAGE_libdb47=y
+          CONFIG_PACKAGE_libgmp=y
+          CONFIG_PACKAGE_libncurses=y
+          CONFIG_PACKAGE_libnss=y
+          CONFIG_PACKAGE_libreadline=y
+          CONFIG_PACKAGE_libruby=y
+          CONFIG_PACKAGE_libsqlite3=y
+          CONFIG_PACKAGE_libxml2=y
+          CONFIG_PACKAGE_libyaml=y
+          CONFIG_PACKAGE_luci-app-openclash=y
+          # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_fuse-utils is not set
+          # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
+          # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy=y
+          CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
+          # CONFIG_PACKAGE_luci-app-vlmcsd is not set
+          # CONFIG_PACKAGE_luci-app-vsftpd is not set
+          # CONFIG_PACKAGE_luci-app-webadmin is not set
+          CONFIG_PACKAGE_naiveproxy=y
+          CONFIG_PACKAGE_nspr=y
+          CONFIG_PACKAGE_ruby=y
+          CONFIG_PACKAGE_ruby-bigdecimal=y
+          CONFIG_PACKAGE_ruby-date=y
+          CONFIG_PACKAGE_ruby-dbm=y
+          CONFIG_PACKAGE_ruby-digest=y
+          CONFIG_PACKAGE_ruby-enc=y
+          CONFIG_PACKAGE_ruby-pstore=y
+          CONFIG_PACKAGE_ruby-psych=y
+          CONFIG_PACKAGE_ruby-stringio=y
+          CONFIG_PACKAGE_ruby-strscan=y
+          CONFIG_PACKAGE_ruby-yaml=y
+          CONFIG_PACKAGE_terminfo=y
+          CONFIG_PACKAGE_v2ray=y
+          # CONFIG_PACKAGE_vlmcsd is not set
+          # CONFIG_PACKAGE_vsftpd-alt is not set
+          CONFIG_SQLITE3_DYNAMIC_EXTENSIONS=y
+          CONFIG_SQLITE3_FTS3=y
+          CONFIG_SQLITE3_FTS4=y
+          CONFIG_SQLITE3_FTS5=y
+          CONFIG_SQLITE3_JSON1=y
+          CONFIG_SQLITE3_RTREE=y
+          CONFIG_TARGET_ROOTFS_TARGZ=y
+          CONFIG_V2RAY_COMPRESS_UPX=y
+          CONFIG_V2RAY_EXCLUDE_ASSETS=y
+          CONFIG_V2RAY_EXCLUDE_V2CTL=y
           EOF
           #
           # ===============================================================
