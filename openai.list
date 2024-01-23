@@ -1,0 +1,18 @@
+DOMAIN-SUFFIX,openai.com,人工智能
+DOMAIN-SUFFIX,sentry.io,人工智能
+DOMAIN-SUFFIX,pay.openai.com,人工智能
+DOMAIN-SUFFIX,identrust.com,人工智能
+DOMAIN,openaiapi-site.azureedge.net,人工智能
+DOMAIN-SUFFIX,chat.openai.com,人工智能
+DOMAIN-SUFFIX,challenges.cloudflare.com,人工智能
+DOMAIN-SUFFIX,auth0.openai.com,人工智能
+DOMAIN-SUFFIX,platform.openai.com,人工智能
+# Add ai.com
+DOMAIN-SUFFIX,ai.com,人工智能
+# Add stripe.com
+DOMAIN-SUFFIX,invoice.stripe.com,人工智能
+DOMAIN-SUFFIX,stripe.com,人工智能
+#add poe.com
+DOMAIN-SUFFIX,poe.com,人工智能
+#add bard.google.com,人工智能
+DOMAIN-SUFFIX,bard.google.com,人工智能
